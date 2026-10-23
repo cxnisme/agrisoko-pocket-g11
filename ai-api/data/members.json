@@ -1,58 +1,107 @@
 [
   {
-    "id": "1",
-    "fullName": "Aline Uwase",
-    "registrationNumber": "INES/2024/001",
-    "aliases": [
-      "Aline",
-      "Liliane",
-      "Price Forecaster Lead"
-    ],
-    "githubUsername": "aline-uwase-g11",
-    "role": "AI and Data Engineer",
-    "skills": [
-      "Python",
-      "scikit-learn",
-      "Pandas",
-      "TF-IDF Data Processing"
-    ],
-    "targetUser": "Potato cooperatives in Musanze",
-    "problem": "Unpredictable potato pricing causing financial losses during harvest",
-    "contribution": "Built the core machine learning price forecasting index algorithm using scikit-learn",
-    "feature": "Price Forecaster Model Engine",
-    "outcomeMetric": "Cuts the average price forecasting error from 25 down to 18 Rwandan francs a kilo",
+    "id": "cxnisme",
+    "fullName": "cxnisme",
+    "aliases": ["christian", "leader", "integrator", "release owner"],
+    "githubUsername": "cxnisme",
+    "role": "Group leader and final integrator",
+    "skills": ["integration", "release coordination", "Android delivery"],
+    "targetUser": "Group G11",
+    "problem": "The project needs a final integration and release owner.",
+    "contribution": "Final integration and release ownership.",
+    "feature": "project integration and release",
+    "outcomeMetric": null,
     "evidenceLinks": [
-      "https://github.com"
+      {
+        "label": "Repository",
+        "url": "https://github.com/cxnisme/agrisoko-pocket-g11"
+      }
     ],
-    "testerFeedback": "Cooperative representatives verified that clear predictive insights help them decide exactly when to sell.",
-    "introductionDraft": "My name is Aline. I help potato cooperatives in Musanze decide when to sell. I built the price forecaster in AgriSoko."
+    "testerFeedback": null,
+    "introductionDraft": "I am the Group G11 leader and final integrator."
   },
   {
-    "id": "2",
-    "fullName": "Eric Nshimiye",
-    "registrationNumber": "INES/2024/002",
-    "aliases": [
-      "Eric",
-      "Rico",
-      "UI Offline Master"
-    ],
-    "githubUsername": "eric-nshimiye-g11",
-    "role": "Offline and Quality Engineer",
-    "skills": [
-      "React Native",
-      "TypeScript",
-      "AsyncStorage",
-      "NetInfo Caching"
-    ],
-    "targetUser": "Cooperative farmers in rural Kinigi",
-    "problem": "Total lack of mobile cellular network connectivity in deep potato fields",
-    "contribution": "Implemented local AsyncStorage profile lookups and state caching when network drops",
-    "feature": "Offline Profile Directory and Storage Layer",
-    "outcomeMetric": "Four farmers successfully tested offline queries; two critical interface bugs resolved",
+    "id": "alain143",
+    "fullName": "alain143",
+    "aliases": ["alain", "mobile", "ui", "navigation", "screen"],
+    "githubUsername": "alain143",
+    "role": "Mobile UI and navigation task owner",
+    "skills": ["React Native", "TypeScript", "Expo", "navigation"],
+    "targetUser": "Android app users",
+    "problem": "The app needs a clear and accessible mobile experience.",
+    "contribution": "Assigned mobile UI, screens, and navigation task; completion is subject to PR review.",
+    "feature": "screens, components, and typed navigation",
+    "outcomeMetric": null,
     "evidenceLinks": [
-      "https://github.com"
+      {
+        "label": "Mobile task pull request",
+        "url": "https://github.com/cxnisme/agrisoko-pocket-g11/pull/5"
+      }
     ],
-    "testerFeedback": "Four rural farmers confirmed they checked critical app data with network turned completely off.",
-    "introductionDraft": "My name is Eric. I built the price screen of AgriSoko Pocket."
+    "testerFeedback": null,
+    "introductionDraft": "I am the mobile UI and navigation task owner for AgriSoko Pocket G11."
+  },
+  {
+    "id": "IHIMBAZWEAngelique",
+    "fullName": "IHIMBAZWEAngelique",
+    "aliases": ["angelique", "ai", "matcher", "data"],
+    "githubUsername": "IHIMBAZWEAngelique",
+    "role": "AI and data task owner",
+    "skills": ["Python", "matching", "data evaluation"],
+    "targetUser": "Users asking about a team member",
+    "problem": "The app needs transparent matching for member questions.",
+    "contribution": "Assigned member matcher and evaluation task.",
+    "feature": "member matching and evaluation",
+    "outcomeMetric": null,
+    "evidenceLinks": [
+      {
+        "label": "AI task",
+        "url": "https://github.com/cxnisme/agrisoko-pocket-g11/issues/2"
+      }
+    ],
+    "testerFeedback": null,
+    "introductionDraft": "I am the AI and data task owner for AgriSoko Pocket G11."
+  },
+  {
+    "id": "rudasingwatheogene1",
+    "fullName": "rudasingwatheogene1",
+    "aliases": ["theogene", "api", "backend", "validation", "server"],
+    "githubUsername": "rudasingwatheogene1",
+    "role": "API backend task owner",
+    "skills": ["FastAPI", "REST API", "validation"],
+    "targetUser": "The mobile application",
+    "problem": "The app needs a stable and validated service API.",
+    "contribution": "Assigned FastAPI endpoints and validation task.",
+    "feature": "API endpoints and validation",
+    "outcomeMetric": null,
+    "evidenceLinks": [
+      {
+        "label": "API task",
+        "url": "https://github.com/cxnisme/agrisoko-pocket-g11/issues/3"
+      }
+    ],
+    "testerFeedback": null,
+    "introductionDraft": "I am the API backend task owner for AgriSoko Pocket G11."
+  },
+  {
+    "id": "ladumartinbullen-cmyk",
+    "fullName": "ladumartinbullen-cmyk",
+    "aliases": ["martin", "offline", "cache", "recovery", "local"],
+    "githubUsername": "ladumartinbullen-cmyk",
+    "role": "Offline and quality task owner",
+    "skills": ["offline lookup", "cache recovery", "device testing"],
+    "targetUser": "Users with limited network access",
+    "problem": "The app should preserve useful directory and result data during network interruptions.",
+    "contribution": "Offline and quality task is defined; issue #4 remains unassigned and no implementation PR has been verified.",
+    "feature": "offline cache, local lookup, and recovery tests",
+    "outcomeMetric": null,
+    "evidenceLinks": [
+      {
+        "label": "Offline and quality task",
+        "url": "https://github.com/cxnisme/agrisoko-pocket-g11/issues/4"
+      }
+    ],
+    "testerFeedback": null,
+    "introductionDraft": "I am the offline and quality task owner for AgriSoko Pocket G11."
   }
 ]

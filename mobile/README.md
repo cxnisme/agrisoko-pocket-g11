@@ -1,27 +1,37 @@
-# Mobile app work area
+# Mobile app
 
-This folder is an implementation placeholder for the Expo/React Native
-TypeScript Android application.
+Expo/React Native Android app for AgriSoko Pocket G11.
 
-## Task owners
+## Start the app (Windows PowerShell)
 
-- UI, navigation, accessibility, and profile presentation: Alain (Task 3).
-- Offline cache, local matching, connectivity and recovery: Martin (Task 4).
-- API contract integration and final app wiring: Christian.
+```powershell
+cd mobile
+npm install
+npx expo start
+```
 
-Coordinate before changing files used by both mobile tasks. See
-[`../docs/TEAM_TASKS.md`](../docs/TEAM_TASKS.md) for acceptance criteria.
+For Expo Go on the same Wi-Fi network as the API:
 
-## Required behavior
+```powershell
+$env:EXPO_PUBLIC_API_URL="http://192.168.1.20:8000"
+npx expo start --android
+```
 
-Build Home, Ask, Team/Directory, Member Profile, and About views. Validate
-questions locally, present confidence and evidence for online matches, and
-provide usable offline directory lookup. Label live, cached, and local results;
-show loading, timeout, retry, no-match, and server-unavailable states without
-losing the last useful result.
+Use the development computer's LAN IP instead of the example address.
 
-Add the Expo manifest, lockfile, typed navigation, tests, and setup commands
-with the implementation. Read the API base URL from safe configuration; never
-commit credentials or a developer-specific address. The final standalone APK
-is built and released by Christian after integration and physical-device
-verification.
+## Checks
+
+```powershell
+npm run typecheck
+npm test
+```
+
+## Behavior
+
+- Typed Android bottom-tab navigation and accessible screens
+- Member task records with linked issue/PR evidence
+- API-backed directory and explainable TF-IDF/cosine results
+- Persistent directory, member, and same-query result cache
+- Bundled offline lookup if there is no saved API response
+- Live, cached, and offline result source indicators
+- Loading, retry, no-match, and server-error states

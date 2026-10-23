@@ -1,24 +1,35 @@
-# AI API work area
+# AgriSoko Pocket G11 API
 
-This folder is an implementation placeholder for the Python/FastAPI service
-and deterministic profile matcher. Coordinate API response fields with the
-mobile owner before changing the contract.
+FastAPI service for the Group G11 member lookup app.
 
-## Task owner
+## Start the backend (Windows PowerShell)
 
-- AI/data and retrieval: Angelique — see Task 1 in [`../docs/TEAM_TASKS.md`](../docs/TEAM_TASKS.md).
-- FastAPI endpoints and validation: Theogene — see Task 2 in
-  [`../docs/TEAM_TASKS.md`](../docs/TEAM_TASKS.md).
-- Final deployment and integration: Christian.
+```powershell
+cd ai-api
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
 
-## Required behavior
+## Endpoints
 
-Implement `GET /health`, `GET /members`, `GET /members/{id}`, `POST /ask`, and
-`GET /model-info` according to the project task brief. Validate inputs and
-responses, support a safe no-match result, and return only approved member data.
-The matching model is deterministic TF-IDF/cosine retrieval; a generative
-service must not be the only available lookup.
+- `GET /health`
+- `GET /model-info`
+- `GET /members`
+- `GET /members/{member_id}`
+- `POST /ask`
 
-Add dependency manifests, source, tests, and exact local run commands with the
-implementation. Do not add secrets, deployment credentials, unapproved profile
-claims, or unmeasured results.
+Run the automated checks with:
+
+```powershell
+python -m pytest -q
+```
+
+## Matching logic
+
+The service uses deterministic TF-IDF/cosine retrieval with exact name and
+alias boosts, then applies a confidence threshold and a top-result margin to
+avoid ambiguous guesses. Responses include matched terms, evidence links, and
+a safe no-match result. The profile data uses GitHub usernames and assigned
+task descriptions pending member review.

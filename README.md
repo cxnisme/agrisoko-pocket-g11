@@ -1,91 +1,88 @@
-# AgriSoko Pocket 11
+# AgriSoko Pocket G11
 
-**Group 11 · Evidence-grounded member finder for Android**
+Group G11's Expo Android app and FastAPI member lookup service.
 
-AgriSoko Pocket lets a user ask about a group member by name, nickname, role,
-skill, or feature. The app should return a grounded match and explain its
-confidence, while still supporting useful directory lookups offline.
+## Submission names
 
-| Project detail | Value |
-| --- | --- |
-| Group code | 11 |
-| App identity | AgriSoko Pocket 11 |
-| Repository | `cxnisme/agrisoko-pocket-g11` |
-| Release APK name | `AgriSokoPocket_11.apk` |
-| Final integrator and release owner | Christian (`cxnisme`) |
+- Repository: `agrisoko-pocket-g11`
+- ZIP: `COMBO_A3_G11.zip`
+- Folder: `COMBO_A3_G11/`
+- APK: `AgriSokoPocket_G11.apk`
+- Report: `COMBO_A3_G11_REPORT.pdf`
+- Demo: `COMBO_A3_G11_DEMO.mp4`
+- Release tag: `v1.0.0`
 
-## Starting point
+## Project layout
 
-This repository is the team task starter: it contains the project brief, folder
-placeholders, contribution guidance, and task drafts. Implementations and
-member-specific profile data have not been added to this starter yet. The
-existing project copy outside this repository is not the team submission
-baseline.
+```text
+COMBO_A3_G11/
+├── README.md
+├── mobile/
+├── ai-api/
+│   ├── requirements.txt
+│   ├── data/
+│   │   └── members.json
+│   └── tests/
+├── build/
+│   └── AgriSokoPocket_G11.apk
+├── docs/
+│   └── COMBO_A3_G11_REPORT.pdf
+└── evidence/
+    ├── COMBO_A3_G11_DEMO.mp4
+    ├── CONTRIBUTIONS.pdf
+    ├── TEST_LOG.pdf
+    ├── FEEDBACK.pdf
+    └── AI_USE.md
+```
 
-Do not claim a feature, test result, model metric, user feedback, or member
-contribution until it has been implemented or measured and its owner has
-verified the evidence. Each member must review their own profile information
-before it is included in the app. Do not commit registration numbers, private
-contact information, credentials, or unapproved personal claims.
+## Run the backend (Windows PowerShell)
 
-## Team responsibilities
+```powershell
+cd ai-api
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
 
-The task breakdown, acceptance criteria, branch workflow, and review
-responsibilities are in [`docs/TEAM_TASKS.md`](docs/TEAM_TASKS.md). Draft issue
-titles and descriptions are in [`docs/GITHUB_ISSUE_DRAFTS.md`](docs/GITHUB_ISSUE_DRAFTS.md).
+API endpoints: `GET /health`, `GET /model-info`, `GET /members`,
+`GET /members/{member_id}`, and `POST /ask`.
 
-Christian retains responsibility for final integration decisions, deployment,
-the standalone APK build, release tag, and release publication. Team task
-ownership may be reassigned to members who participate; see the task guide.
+## Run the mobile app
 
-## Project folders
+```powershell
+cd mobile
+npm install
+npx expo start
+```
 
-- [`ai-api/`](ai-api/README.md): Python, FastAPI, and the deterministic profile
-  matching service.
-- [`mobile/`](mobile/README.md): Expo, React Native, and TypeScript Android app.
-- [`docs/`](docs/TEAM_TASKS.md): architecture notes, task definitions, and
-  GitHub issue drafts.
-- [`evidence/`](evidence/README.md): verified test results, member sign-offs,
-  and device-test records.
+For Expo Go, use the development computer's LAN IP address for the API, not
+`localhost`:
 
-## Target behavior
+```powershell
+$env:EXPO_PUBLIC_API_URL="http://192.168.1.20:8000"
+npx expo start --android
+```
 
-- Search approved member profiles with a transparent TF-IDF/cosine matcher.
-- Show the selected member, confidence, match reason, and approved evidence.
-- Reject vague or unrelated questions instead of guessing.
-- Provide a browsable member directory and useful exact-name, alias, and role
-  lookup offline.
-- Preserve cached directory/results and show whether a result is live, cached,
-  or local.
-- Deliver and test a standalone Android APK that does not require Expo Go.
+Replace the example address with the computer's actual LAN IP.
 
-The full API contract, privacy requirements, and evaluation requirements are
-part of the project task document. Implementations must be tested against those
-requirements before the team marks them complete.
+## Build an APK with Expo EAS
 
-## Collaboration
+`mobile/eas.json` is configured to generate an installable Android APK:
 
-1. Pick one task from [`docs/TEAM_TASKS.md`](docs/TEAM_TASKS.md) and coordinate
-   overlapping files before editing.
-2. Create a feature branch from `main`, implement only the agreed task, and run
-   its focused checks.
-3. Open a pull request to `main`, describe the change and test evidence, and
-   request a review from another member.
-4. Merge only after review and passing checks. Do not push task work directly
-   to `main`.
-5. Record real issue, branch, PR, commit, test, and demo evidence. Never invent
-   a metric, tester comment, contribution, or link.
+```powershell
+cd mobile
+npx eas-cli@latest build --platform android --profile production
+```
 
-Use the pull request template in [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md).
+The build needs access to the linked Expo account. Set
+`EXPO_PUBLIC_API_URL` to a deployed HTTPS service URL before building when the
+APK should use a hosted API. The app includes bundled task records for local
+lookup when the API is unreachable.
 
-## Environment
+## Data and evidence status
 
-- Python 3.12 or another version supported by the selected dependency releases.
-- Node.js LTS and npm for Expo.
-- Git.
-- Android phone and Expo Go for development previews; the final release must
-  also be tested as a standalone APK.
-
-No application dependencies are installed in this starter yet. Each task owner
-should add only the dependencies required by their implementation and document
-them in the appropriate project manifest.
+Member records use GitHub usernames and assigned responsibilities. They do not
+claim task completion, personal names, tester feedback, or measured outcomes
+without supporting evidence and member review. Local automated test results
+are documented separately from physical-device tests.

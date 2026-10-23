@@ -1,4 +1,4 @@
-# Group 11 task guide
+# Group G11 task guide
 
 ## Ownership and integration
 
@@ -104,6 +104,15 @@ explain a code decision, and contribute a review. Before a profile record is
 used in a public release, its owner must review and sign off on the exact claims.
 Collect tester feedback only with consent. Store issue, branch, PR, merged commit,
 and demo timestamp links after those artifacts exist.
+
+## Current integration status
+
+Christian has integrated the mobile app, persistent offline cache, local lookup,
+FastAPI endpoints, and deterministic TF-IDF/cosine matching in the working
+release tree. Local automated checks are recorded in `evidence/TEST_LOG.pdf`
+when available. This integration does not replace member review of PR #5 or
+profile sign-off. The API is not yet deployed, issue #4 remains unassigned, and
+no physical-device demo or tester feedback has been recorded.
 
 ## Branch and pull request workflow
 

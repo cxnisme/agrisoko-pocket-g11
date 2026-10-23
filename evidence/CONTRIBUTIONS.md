@@ -1,15 +1,17 @@
-# AgriSoko Pocket G11 - Technical Requirements & Contribution Matrix
+# G11 contribution evidence
 
-We, the undersigned members of Group G11, verify that this contribution matrix accurately traces feature implementation to our specific GitHub histories, branches, and verification commits.
+This is a working record, not a signed contribution confirmation. GitHub
+authorship and merged pull requests should be used to verify implementation.
+Task assignment alone does not establish that a deliverable was completed.
 
-| Team Member Name | Registration Number | Assigned Primary Role | Implemented Deliverable Feature | Linked GitHub Issue / PR | Final Merged Commit Hash | Demo Timestamp |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Aline Uwase** | INES/2024/001 | AI & Data Engineer | `build_index.py`, TF-IDF Vector matrix calculation model, API schema matching validation. | Issue #3 / PR #12 | `a1b2c3d4e5f6` | 01:45 - 02:15 |
-| **Eric Nshimiye** | INES/2024/002 | Offline & Quality Engineer | AsyncStorage caching fallback mechanics, NetInfo connection detection, local query boosts. | Issue #5 / PR #15 | `e5f6g7h8i9j0` | 02:16 - 02:50 |
+| GitHub username | Assigned area | Verified implementation evidence | Member confirmation |
+| --- | --- | --- | --- |
+| cxnisme | Integration and release coordination | Pending final release commit and review record | Pending |
+| alain143 | Mobile UI and navigation | Pull request #5; verify final merged status and included files before submission | Pending |
+| IHIMBAZWEAngelique | AI matching and data | Assigned task; implementation evidence not yet recorded here | Pending |
+| rudasingwatheogene1 | FastAPI backend | Pull request #6; verify merged changes against current implementation | Pending |
+| ladumartinbullen-cmyk | Offline behavior and quality | Assigned task; implementation evidence not yet recorded here | Pending |
 
-### Disagreements or Discrepancies
-* None. All implementation pipelines were peer-reviewed and fully merged into the `main` deployment release state via consensus.
-
-### Signatures
-* **Aline Uwase**: ___________________________ Date: 23rd October 2026
-* **Eric Nshimiye**: __________________________ Date: 23rd October 2026
+Do not add personal names, registration numbers, signatures, metrics, or tester
+statements without confirmation and supporting evidence. Replace this working
+record with the members' reviewed contribution details before submission.
