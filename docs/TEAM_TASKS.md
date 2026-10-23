@@ -21,7 +21,7 @@ the integrator's approval.
 
 ## Task 1 — AI and evidence-grounded matching
 
-**Owner:** Angelique · **Area:** `ai-api/`
+**Owner:** Angelique · **Area:** `ai-api/` · **Issue:** [#2](https://github.com/cxnisme/agrisoko-pocket-g11/issues/2) (assigned)
 
 Implement a deterministic Python profile finder using approved records only.
 Define and validate the profile schema, normalize searchable text, build
@@ -41,7 +41,7 @@ that evidence is grounded and the contract can be integrated.
 
 ## Task 2 — API service and contract
 
-**Owner:** Theogene · **Area:** `ai-api/`
+**Owner:** Theogene · **Area:** `ai-api/` · **Issue:** [#3](https://github.com/cxnisme/agrisoko-pocket-g11/issues/3) (assigned)
 
 Implement the FastAPI surface defined in the task brief: `GET /health`,
 `GET /members`, `GET /members/{id}`, `POST /ask`, and `GET /model-info`.
@@ -59,7 +59,7 @@ recovery behavior.
 
 ## Task 3 — Mobile user interface
 
-**Owner:** Alain · **Area:** `mobile/`
+**Owner:** Alain · **Area:** `mobile/` · **Issue:** [#1](https://github.com/cxnisme/agrisoko-pocket-g11/issues/1) (assigned)
 
 Build the Expo/TypeScript app screens and typed navigation for Home, Ask, Team,
 Member Profile, and About. Present online AI results with confidence, reason,
@@ -76,7 +76,11 @@ cross-platform API wiring before integration.
 
 ## Task 4 — Offline behavior and quality evidence
 
-**Owner:** Martin · **Area:** `mobile/`, `evidence/`
+**Owner:** Martin · **Area:** `mobile/`, `evidence/` · **Issue:** [#4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4) (unassigned)
+
+GitHub did not offer Martin's account in the issue assignee picker. The task is
+open and unassigned; Christian can add Martin as a repository collaborator and
+assign it, or explicitly reassign the task to a participating member.
 
 Implement or verify connectivity-aware behavior, caching of the approved
 directory and last successful result, local exact-name/alias/role lookup,

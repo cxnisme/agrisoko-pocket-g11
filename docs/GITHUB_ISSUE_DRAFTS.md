@@ -1,16 +1,21 @@
 # GitHub issue drafts
 
-The connected GitHub tools in this workspace can inspect issues but cannot
-create them. The starter has been pushed. The mobile UI task already exists as
-[issue #1](https://github.com/cxnisme/agrisoko-pocket-g11/issues/1); do not
-create a duplicate. The remaining drafts are ready to paste into **Issues →
-New issue**. Assign each issue to the named GitHub account and use the matching
-task in [`TEAM_TASKS.md`](TEAM_TASKS.md). If an account cannot be assigned,
-leave it unassigned and ask the member to claim it.
+The task issues are now open. Task 3 already existed as
+[issue #1](https://github.com/cxnisme/agrisoko-pocket-g11/issues/1), opened by
+Alain and now assigned to him. The AI task is [issue #2](https://github.com/cxnisme/agrisoko-pocket-g11/issues/2),
+assigned to Angelique; the API task is
+[issue #3](https://github.com/cxnisme/agrisoko-pocket-g11/issues/3), assigned
+to Theogene; and the offline/quality task is
+[issue #4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4), currently
+unassigned because Martin was not available in GitHub's assignee picker.
+
+The descriptions below are retained as task references. Do not open duplicate
+issues. Use [`TEAM_TASKS.md`](TEAM_TASKS.md) for role ownership, review, and
+integration responsibilities.
 
 ## Task 1 — Build the approved-profile AI matcher and evaluation
 
-**Suggested assignee:** `IHIMBAZWEAngelique`
+**Issue:** [#2](https://github.com/cxnisme/agrisoko-pocket-g11/issues/2) · **Assignee:** `IHIMBAZWEAngelique`
 
 **Body:**
 
@@ -34,7 +39,7 @@ Acceptance:
 
 ## Task 2 — Implement the FastAPI endpoints and validation
 
-**Suggested assignee:** `rudasingwatheogiene1`
+**Issue:** [#3](https://github.com/cxnisme/agrisoko-pocket-g11/issues/3) · **Assignee:** `rudasingwatheogiene1`
 
 **Body:**
 
@@ -55,7 +60,7 @@ Acceptance:
 
 ## Task 3 — Build accessible member-finder screens (tracked by issue #1)
 
-**Suggested assignee:** `alain143`
+**Issue:** [#1](https://github.com/cxnisme/agrisoko-pocket-g11/issues/1) · **Assignee:** `alain143`
 
 Issue #1 already covers the mobile screens, typed navigation, validation,
 error/retry states, accessibility, and evidence links. Compare its acceptance
@@ -80,7 +85,7 @@ Acceptance:
 
 ## Task 4 — Implement and verify offline behavior
 
-**Suggested assignee:** `ladumartinbullen-cmyk`
+**Issue:** [#4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4) · **Assignee:** unassigned; Martin was not available in the assignee picker.
 
 **Body:**
 
