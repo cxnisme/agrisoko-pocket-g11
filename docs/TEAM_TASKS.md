@@ -78,9 +78,10 @@ cross-platform API wiring before integration.
 
 **Owner:** Martin · **Area:** `mobile/`, `evidence/` · **Issue:** [#4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4) (unassigned)
 
-GitHub did not offer Martin's account in the issue assignee picker. The task is
-open and unassigned; Christian can add Martin as a repository collaborator and
-assign it, or explicitly reassign the task to a participating member.
+Martin has been invited to collaborate, but has not accepted the repository
+invitation yet, so GitHub does not offer his account in the issue assignee
+picker. Issue #4 remains open and unassigned until he accepts; then assign it
+to Martin or explicitly reassign it to another participating member.
 
 Implement or verify connectivity-aware behavior, caching of the approved
 directory and last successful result, local exact-name/alias/role lookup,

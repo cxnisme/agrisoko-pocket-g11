@@ -7,7 +7,8 @@ assigned to Angelique; the API task is
 [issue #3](https://github.com/cxnisme/agrisoko-pocket-g11/issues/3), assigned
 to Theogene; and the offline/quality task is
 [issue #4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4), currently
-unassigned because Martin was not available in GitHub's assignee picker.
+unassigned because Martin's collaborator invitation is still pending and he is
+not yet available in GitHub's assignee picker.
 
 The descriptions below are retained as task references. Do not open duplicate
 issues. Use [`TEAM_TASKS.md`](TEAM_TASKS.md) for role ownership, review, and
