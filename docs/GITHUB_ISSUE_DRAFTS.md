@@ -1,10 +1,12 @@
 # GitHub issue drafts
 
 The connected GitHub tools in this workspace can inspect issues but cannot
-create them. These drafts are ready to paste into **Issues → New issue** after
-the starter has been pushed. Assign each issue to the named GitHub account and
-use the matching task in [`TEAM_TASKS.md`](TEAM_TASKS.md). If an account cannot
-be assigned, leave it unassigned and ask the member to claim it.
+create them. The starter has been pushed. The mobile UI task already exists as
+[issue #1](https://github.com/cxnisme/agrisoko-pocket-g11/issues/1); do not
+create a duplicate. The remaining drafts are ready to paste into **Issues →
+New issue**. Assign each issue to the named GitHub account and use the matching
+task in [`TEAM_TASKS.md`](TEAM_TASKS.md). If an account cannot be assigned,
+leave it unassigned and ask the member to claim it.
 
 ## Task 1 — Build the approved-profile AI matcher and evaluation
 
@@ -51,11 +53,16 @@ Acceptance:
 
 **Review:** Angelique and Martin.
 
-## Task 3 — Build accessible member-finder screens
+## Task 3 — Build accessible member-finder screens (tracked by issue #1)
 
 **Suggested assignee:** `alain143`
 
-**Body:**
+Issue #1 already covers the mobile screens, typed navigation, validation,
+error/retry states, accessibility, and evidence links. Compare its acceptance
+criteria with Task 3 in [`TEAM_TASKS.md`](TEAM_TASKS.md) and update that issue
+if coordination is needed; do not open another copy.
+
+**Existing issue body:**
 
 Implement the Expo/TypeScript navigation and UI under `mobile/` for Home, Ask,
 Team/Directory, Member Profile, and About. Coordinate the API contract before
