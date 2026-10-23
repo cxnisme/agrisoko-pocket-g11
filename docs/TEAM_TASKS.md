@@ -10,8 +10,11 @@
 | Alain | `alain143` | Mobile UI: Expo screens, navigation, accessible member directory/profile and online result presentation | Usability, accessibility, and visual evidence |
 | Martin | `ladumartinbullen-cmyk` | Offline/quality: cached directory and last result, local lookup, connectivity states, and offline/device test matrix | Offline recovery and evaluation evidence |
 
-Christian coordinates any task reassignment through the related issue or pull
-request. Our contribution record follows the available authorship evidence.
+As group leader, Christian completed the final integration of the mobile,
+matching, API, and offline features in the release tree. No feature
+implementation is waiting for reassignment. The contribution record follows
+the available authorship evidence and distinguishes integrated work from
+member-authored work.
 
 Christian leads final integration, deployment, EAS APK build, release tag, and
 publication. Our team coordinates component reviews and deployment handoff
@@ -106,20 +109,29 @@ include issue, branch, PR, commit, and demo references when available.
 
 As group leader and final integrator, Christian integrated the mobile app,
 persistent offline cache, local lookup, FastAPI endpoints, and deterministic
-TF-IDF/cosine matching in the working release tree. Local automated checks are
-recorded in `evidence/TEST_LOG.pdf`. PR #5 and member profile sign-off are
-tracked separately. The API is not yet deployed, issue #4 remains open and
-assigned to Martin, and physical-device demo and tester feedback are not
-included in the current evidence.
+TF-IDF/cosine matching in the release tree. All four feature areas are
+implemented in that integration; member-authored attribution and PR status are
+tracked separately. Local automated checks are recorded in
+`evidence/TEST_LOG.pdf`.
+
+The following delivery and evidence gaps are separate from feature
+implementation: the matcher evaluation artifact is not present; the API is
+not deployed; the production APK uses the Android emulator API fallback
+`http://10.0.2.2:8000` because a hosted `EXPO_PUBLIC_API_URL` was not embedded;
+no physical-device test, demo recording, external feedback, or member profile
+sign-off is available. The `v1.0.0` Git tag currently points to commit
+`8b768e1`, before the integrated build commit, and GitHub has no published
+release. GitHub issues and PRs retain their actual remote statuses and are not
+treated as proof that the integrated features are missing.
 
 ### Verified member task status
 
 | Member | Status | Evidence and remaining distinction |
 |---|---|---|
-| Alain (`alain143`) | **Implementation integrated; review findings documented** | Mobile screens/navigation were incorporated in release integration `4cdc9d9`. PR [#5](https://github.com/cxnisme/agrisoko-pocket-g11/pull/5) remains open and unmerged; our review record identifies placeholder/mock-data and stale-result issues in its submitted branch. |
-| Theogene (`rudasingwatheogene1`) | **PR merged by author; release implementation superseded** | PR [#6](https://github.com/cxnisme/agrisoko-pocket-g11/pull/6) was merged without submitted reviews or check runs. Its sample profile data and pickle-based model path were removed; the current API was reimplemented during release integration. The API work is recorded, but PR review and issue #3 acceptance are not equivalent to formal approval or deployment. |
-| Angelique (`IHIMBAZWEAngelique`) | **Pending** | The matcher is present in the release integration, but no Angelique-authored implementation PR, evaluation evidence, or member confirmation is recorded. Theogene's merged API PR is recorded separately from Angelique's matcher task. |
-| Martin (`ladumartinbullen-cmyk`) | **Pending** | No member-authored implementation PR or device-test evidence is recorded. The offline behavior in the release integration is recorded as integrator work. |
+| Alain (`alain143`) | **Mobile implementation integrated by the group leader; PR review findings documented** | Mobile screens/navigation were incorporated in release integration `4cdc9d9`. PR [#5](https://github.com/cxnisme/agrisoko-pocket-g11/pull/5) remains open and unmerged; our review record identifies placeholder/mock-data and stale-result issues in its submitted branch. |
+| Theogene (`rudasingwatheogene1`) | **API integrated by the group leader; earlier PR contribution recorded separately** | PR [#6](https://github.com/cxnisme/agrisoko-pocket-g11/pull/6) was merged without submitted reviews or check runs. Its sample profile data and pickle-based model path were removed; the current API was reimplemented during release integration. The API is implemented locally, but deployment and formal issue acceptance are not verified. |
+| Angelique (`IHIMBAZWEAngelique`) | **Matcher integrated by the group leader; member evidence not recorded** | The matcher is present in the release integration. No Angelique-authored implementation PR, evaluation artifact, or member confirmation is recorded. Theogene's merged API PR is recorded separately from matcher implementation. |
+| Martin (`ladumartinbullen-cmyk`) | **Offline behavior integrated by the group leader; device evidence not recorded** | The offline cache and local lookup are present in the release integration. No Martin-authored implementation PR or physical-device test evidence is recorded. |
 
 These implementation statuses distinguish repository evidence from member
 sign-off, profile approval, and physical-device validation. The review notes
@@ -156,14 +168,20 @@ Our pull requests use `main` as the base, describe the task, list checks that
 were run, link the issue, and request the listed reviewer. We coordinate shared
 branches and merges through the team's review process.
 
-### Current task status
+### Final integration status
 
-- [ ] Task 1 — Angelique: implementation/acceptance evidence pending.
-- [x] Task 2 — Theogene: API contribution merged; release API was reimplemented. Issue #3 acceptance and deployment checks remain open.
-- [x] Task 3 — Alain: mobile implementation integrated; PR #5 remains open and unmerged.
-- [ ] Task 4 — Martin: member implementation and device-test evidence pending.
-- [ ] Each member has reviewed and signed off on their own profile record.
-- [ ] Christian has completed deployment, APK build, and release verification.
+- [x] Task 1 — Deterministic member matcher integrated by the group leader.
+- [x] Task 2 — FastAPI endpoints and validation integrated by the group leader.
+- [x] Task 3 — Mobile screens and navigation integrated by the group leader.
+- [x] Task 4 — Offline cache and local lookup integrated by the group leader.
+- [ ] Matcher evaluation artifact and metrics recorded.
+- [ ] API deployed and reachable from the production app.
+- [x] EAS APK build completed, APK downloaded, and archive structure verified.
+- [ ] Hosted API URL configured in EAS production environment and a replacement APK built.
+- [ ] Physical-device test and demo recording completed.
+- [ ] Member profile sign-off and external tester feedback collected.
+- [ ] GitHub issues and PRs updated to reflect final integration.
+- [ ] `v1.0.0` tag aligned with the final integrated commit and GitHub release published with the APK.
 
-If a task owner does not participate, Christian will reassign the remaining work
-to participating members and update the issue/PR assignment before integration.
+These unchecked items are real delivery, evidence, or remote-tracking gaps;
+they do not mean that the feature implementation is waiting to be reassigned.

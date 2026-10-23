@@ -6,11 +6,11 @@ separately so each contribution is represented accurately.
 
 | GitHub username | Assigned area | Verified implementation evidence | Status |
 | --- | --- | --- | --- |
-| cxnisme | Integration and release coordination | Integration commits on `main`; APK and release verification remain incomplete | Integrator; release pending |
+| cxnisme | Group leadership, implementation integration, and release coordination | Integrated mobile UI, matcher, FastAPI service, and offline behavior on `main`; production APK build succeeded | Final integration and APK build complete; deployment, device, and release verification outstanding |
 | alain143 | Mobile UI and navigation | Mobile screens/navigation incorporated in commit `4cdc9d9`; PR [#5](https://github.com/cxnisme/agrisoko-pocket-g11/pull/5) remains open with changes requested | Implementation integrated; submitted PR not approved/merged |
-| IHIMBAZWEAngelique | AI matching and data | No member-authored implementation PR or confirmation recorded | Pending |
-| rudasingwatheogene1 | FastAPI backend | PR [#6](https://github.com/cxnisme/agrisoko-pocket-g11/pull/6) merged by author; original sample-data/pickle implementation was removed and API was replaced during release integration | PR merged; review/issue acceptance and deployment pending |
-| ladumartinbullen-cmyk | Offline behavior and quality | No member-authored implementation PR or physical-device evidence recorded | Pending |
+| IHIMBAZWEAngelique | AI matching and data | Matcher is present in the release integration; no member-authored implementation PR, evaluation artifact, or confirmation recorded | Feature integrated by group leader; member attribution evidence unavailable |
+| rudasingwatheogene1 | FastAPI backend | PR [#6](https://github.com/cxnisme/agrisoko-pocket-g11/pull/6) merged by author; original sample-data/pickle implementation was removed and API was reimplemented during release integration | API integrated by group leader; deployment and formal issue acceptance outstanding |
+| ladumartinbullen-cmyk | Offline behavior and quality | Offline behavior is present in the release integration; no member-authored implementation PR or physical-device evidence recorded | Feature integrated by group leader; device evidence unavailable |
 
 Our current member directory uses GitHub usernames and assigned task areas.
 Personal details, member statements, measured outcomes, and tester feedback

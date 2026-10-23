@@ -31,5 +31,6 @@ python -m pytest -q
 The service uses deterministic TF-IDF/cosine retrieval with exact name and
 alias boosts, then applies a confidence threshold and a top-result margin to
 avoid ambiguous guesses. Responses include matched terms, evidence links, and
-a safe no-match result. The profile data uses GitHub usernames and assigned
-task descriptions pending member review.
+a safe no-match result. The profile data uses GitHub usernames, assigned task areas, and repository
+evidence. The final matcher and offline features were integrated by the group
+leader; member-authored work and profile confirmation are recorded separately.
