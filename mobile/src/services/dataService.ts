@@ -79,7 +79,7 @@ const LOCAL_MEMBERS: Member[] = [
     skills: ['offline lookup', 'cache recovery', 'device testing'],
     targetUser: 'Users with limited network access',
     problem: 'The app should preserve useful directory and result data during network interruptions.',
-    contribution: 'Offline and quality task is defined; issue #4 remains unassigned and no implementation PR has been verified.',
+    contribution: 'Offline and quality task is defined in issue #4; no member implementation PR has been verified.',
     feature: 'offline cache, local lookup, and recovery tests',
     outcomeMetric: null,
     evidenceLinks: [{ label: 'Offline and quality task', url: 'https://github.com/cxnisme/agrisoko-pocket-g11/issues/4' }],

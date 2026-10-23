@@ -116,14 +116,28 @@ no physical-device demo or tester feedback has been recorded.
 
 | Member | Status | Evidence and remaining distinction |
 |---|---|---|
-| Alain (`alain143`) | **Implementation complete; integrated** | Mobile implementation is present in the release integration (`4cdc9d9`). PR [#5](https://github.com/cxnisme/agrisoko-pocket-g11/pull/5) is still open and has not been reviewed or merged. |
-| Theogene (`rudasingwatheogene1`) | **Implementation integrated; PR merged** | PR [#6](https://github.com/cxnisme/agrisoko-pocket-g11/pull/6) was merged into `main`. Issue #3 remains open for checking the complete acceptance criteria and deployment readiness. |
+| Alain (`alain143`) | **Implementation integrated; PR review requests changes** | Mobile screens/navigation were incorporated in release integration `4cdc9d9`. PR [#5](https://github.com/cxnisme/agrisoko-pocket-g11/pull/5) remains open and unmerged; the submitted branch has blocking placeholder/mock-data and stale-result issues listed in the review record below. |
+| Theogene (`rudasingwatheogene1`) | **PR merged by author; release implementation superseded** | PR [#6](https://github.com/cxnisme/agrisoko-pocket-g11/pull/6) was merged without submitted reviews or check runs. Its sample profile data and pickle-based model path were removed; the current API was reimplemented during release integration. The API work is recorded, but PR review and issue #3 acceptance are not equivalent to formal approval or deployment. |
 | Angelique (`IHIMBAZWEAngelique`) | **Pending** | The matcher is present, but no Angelique-authored implementation PR, evaluation evidence, or member confirmation is recorded. Do not attribute Theogene's merged PR to Angelique. |
 | Martin (`ladumartinbullen-cmyk`) | **Pending** | No member-authored implementation PR or device-test evidence is recorded. Offline behavior in the release integration is not attributed to Martin. |
 
 These implementation statuses do not claim member sign-off, profile approval,
-or physical-device validation. PR #5 remains unreviewed; do not describe it as
-formally approved or merged.
+or physical-device validation. The reviews below are code-review findings,
+not GitHub-submitted approvals.
+
+### Pull request review record
+
+Reviewed the complete diffs for PRs #5 and #6 on 23 October 2026. Neither PR
+has a submitted GitHub review or reported CI/check results.
+
+| PR | Review outcome | Findings and current-main disposition |
+|---|---|---|
+| [#5 — Alain, mobile UI](https://github.com/cxnisme/agrisoko-pocket-g11/pull/5) | **Request changes; do not merge the submitted branch as-is.** | The PR defaults to mock mode and returns placeholder profiles, includes `GXX`/placeholder repository configuration, and keeps a module-global previous result that can be shown after a different query fails. The release integration replaced the mock data and corrected the group/repository values; the result cache is now query-scoped. PR #5 remains open and unmerged, so the fixes in `main` must not be represented as a PR approval. |
+| [#6 — Theogene, API](https://github.com/cxnisme/agrisoko-pocket-g11/pull/6) | **Merged by author; post-merge review found release blockers in the submitted diff.** | The diff included unverified sample profile claims and auto-generated sample data, loaded a pickle model at API startup, omitted the required `/members` endpoints, and added a CORS test without corresponding CORS middleware in that diff. The pickle and sample-data implementation were removed and the API was replaced in release integration. PR #6 remains merged in GitHub history, but this is not a reviewer approval of its original implementation. |
+
+The final integration has separate local validation records; those results do
+not retroactively validate the untested PR heads. No PR was closed or merged
+as part of this review.
 
 ## Branch and pull request workflow
 
@@ -145,8 +159,8 @@ branches or merge your own PR without the team's agreed review.
 ### Current task status
 
 - [ ] Task 1 — Angelique: implementation/acceptance evidence pending.
-- [x] Task 2 — Theogene: API implementation integrated from merged PR #6; issue #3 remains open for acceptance checks.
-- [x] Task 3 — Alain: implementation integrated; PR #5 review/merge remains pending.
+- [x] Task 2 — Theogene: API contribution merged; release API was reimplemented. Issue #3 acceptance and deployment checks remain open.
+- [x] Task 3 — Alain: mobile implementation integrated; PR #5 is open with changes requested and must not be reported as merged.
 - [ ] Task 4 — Martin: member implementation and device-test evidence pending.
 - [ ] Each member has reviewed and signed off on their own profile record.
 - [ ] Christian has completed deployment, APK build, and release verification.
