@@ -21,3 +21,8 @@ installation and physical-device behavior have not been tested. Inspection of
 the bundled JavaScript confirmed the Android emulator fallback
 `http://10.0.2.2:8000`; no hosted API URL was embedded. This address does not
 provide a hosted API for physical devices.
+
+The remote `v1.0.0` tag points to the source revision used by this APK.
+The GitHub Release has not yet been published; an authenticated GitHub session
+is required to attach the APK. The release notes should disclose the API
+fallback limitation.

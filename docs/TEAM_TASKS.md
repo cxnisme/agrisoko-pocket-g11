@@ -120,9 +120,10 @@ not deployed; the production APK uses the Android emulator API fallback
 `http://10.0.2.2:8000` because a hosted `EXPO_PUBLIC_API_URL` was not embedded;
 no physical-device test, demo recording, external feedback, or member profile
 sign-off is available. The `v1.0.0` Git tag currently points to commit
-`8b768e1`, before the integrated build commit, and GitHub has no published
-release. GitHub issues and PRs retain their actual remote statuses and are not
-treated as proof that the integrated features are missing.
+`606779e`, which is the source revision used by the successful EAS APK build.
+GitHub has no published release yet; the release form requires an
+authenticated GitHub session. GitHub issues and PRs retain their actual remote
+statuses and are not treated as proof that the integrated features are missing.
 
 ### Verified member task status
 
@@ -181,7 +182,8 @@ branches and merges through the team's review process.
 - [ ] Physical-device test and demo recording completed.
 - [ ] Member profile sign-off and external tester feedback collected.
 - [ ] GitHub issues and PRs updated to reflect final integration.
-- [ ] `v1.0.0` tag aligned with the final integrated commit and GitHub release published with the APK.
+- [x] `v1.0.0` tag aligned with the source revision used for the EAS APK.
+- [ ] GitHub release published with the APK.
 
 These unchecked items are real delivery, evidence, or remote-tracking gaps;
 they do not mean that the feature implementation is waiting to be reassigned.
