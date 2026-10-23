@@ -25,3 +25,4 @@ with the implementation. Read the API base URL from safe configuration; never
 commit credentials or a developer-specific address. The final standalone APK
 is built and released by Christian after integration and physical-device
 verification.
+Angelique make review  visit  every page and make sure that its warks well
