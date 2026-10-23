@@ -121,9 +121,10 @@ not deployed; the production APK uses the Android emulator API fallback
 no physical-device test, demo recording, external feedback, or member profile
 sign-off is available. The `v1.0.0` Git tag currently points to commit
 `606779e`, which is the source revision used by the successful EAS APK build.
-GitHub has no published release yet; the release form requires an
-authenticated GitHub session. GitHub issues and PRs retain their actual remote
-statuses and are not treated as proof that the integrated features are missing.
+The [GitHub v1.0.0 release](https://github.com/cxnisme/agrisoko-pocket-g11/releases/tag/v1.0.0)
+is published with the verified APK and an explicit note about the emulator-only
+API fallback. GitHub issues and PRs retain their actual remote statuses and
+are not treated as proof that the integrated features are missing.
 
 ### Verified member task status
 
@@ -183,7 +184,7 @@ branches and merges through the team's review process.
 - [ ] Member profile sign-off and external tester feedback collected.
 - [ ] GitHub issues and PRs updated to reflect final integration.
 - [x] `v1.0.0` tag aligned with the source revision used for the EAS APK.
-- [ ] GitHub release published with the APK.
+- [x] GitHub release published with the APK and API fallback limitation noted.
 
 These unchecked items are real delivery, evidence, or remote-tracking gaps;
 they do not mean that the feature implementation is waiting to be reassigned.

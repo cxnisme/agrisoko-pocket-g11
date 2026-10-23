@@ -88,7 +88,9 @@ tasks still in progress. Local automated test results are reported separately
 from physical-device testing and user feedback.
 
 The EAS production build succeeded and the APK is available at
-`build/AgriSokoPocket_G11.apk`. The APK currently uses the Android emulator
+`build/AgriSokoPocket_G11.apk` and the
+[GitHub v1.0.0 release](https://github.com/cxnisme/agrisoko-pocket-g11/releases/tag/v1.0.0).
+The APK currently uses the Android emulator
 address `http://10.0.2.2:8000` when no `EXPO_PUBLIC_API_URL` is supplied. A
 hosted API URL must be configured and a new APK built before live API access
 from physical devices is available; bundled local lookup remains available.

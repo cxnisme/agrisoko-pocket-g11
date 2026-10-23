@@ -7,7 +7,7 @@ external user feedback, and a demo recording remain separate evidence items.
 
 | Deliverable | Status |
 | --- | --- |
-| `../build/AgriSokoPocket_G11.apk` | Available; EAS production build succeeded; archive structure and SHA-256 recorded in `../build/README.md` |
+| `../build/AgriSokoPocket_G11.apk` | Available in the package and published in GitHub release [v1.0.0](https://github.com/cxnisme/agrisoko-pocket-g11/releases/tag/v1.0.0); EAS build, archive structure, and SHA-256 recorded in `../build/README.md` |
 | `AI_USE.md` | Available; describes project authorship, development assistance, and runtime behavior |
 | `CONTRIBUTIONS.pdf` | Available; records repository evidence and pull-request review findings |
 | `TEST_LOG.pdf` | Available; records automated local checks; no physical-device test is included |
