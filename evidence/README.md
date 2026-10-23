@@ -8,8 +8,8 @@ recording must remain pending until performed.
 | Deliverable | Status |
 | --- | --- |
 | `AI_USE.md` | Available; describes development assistance and runtime behavior |
-| `CONTRIBUTIONS.pdf` | Not generated; review `CONTRIBUTIONS.md` with all members first |
-| `TEST_LOG.pdf` | Not generated; capture and record real test results |
+| `CONTRIBUTIONS.pdf` | Available; records repository-verified task status; member profile sign-off remains pending |
+| `TEST_LOG.pdf` | Available; contains automated local test results; physical-device checks remain pending |
 | `FEEDBACK.pdf` | Not generated; collect consented feedback before documenting |
 | `COMBO_A3_G11_DEMO.mp4` | Not recorded; capture the app on a real device |
 

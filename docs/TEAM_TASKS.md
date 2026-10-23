@@ -76,12 +76,10 @@ cross-platform API wiring before integration.
 
 ## Task 4 — Offline behavior and quality evidence
 
-**Owner:** Martin · **Area:** `mobile/`, `evidence/` · **Issue:** [#4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4) (unassigned)
+**Owner:** Martin · **Area:** `mobile/`, `evidence/` · **Issue:** [#4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4) (assigned)
 
-Martin has been invited to collaborate, but has not accepted the repository
-invitation yet, so GitHub does not offer his account in the issue assignee
-picker. Issue #4 remains open and unassigned until he accepts; then assign it
-to Martin or explicitly reassign it to another participating member.
+Issue #4 is assigned to Martin. No implementation PR or device-test evidence
+has been recorded for this task yet.
 
 Implement or verify connectivity-aware behavior, caching of the approved
 directory and last successful result, local exact-name/alias/role lookup,
@@ -109,10 +107,23 @@ and demo timestamp links after those artifacts exist.
 
 Christian has integrated the mobile app, persistent offline cache, local lookup,
 FastAPI endpoints, and deterministic TF-IDF/cosine matching in the working
-release tree. Local automated checks are recorded in `evidence/TEST_LOG.pdf`
-when available. This integration does not replace member review of PR #5 or
-profile sign-off. The API is not yet deployed, issue #4 remains unassigned, and
+release tree. Local automated checks are recorded in `evidence/TEST_LOG.pdf`.
+This integration does not replace member review of PR #5 or profile sign-off.
+The API is not yet deployed, issue #4 remains open and assigned to Martin, and
 no physical-device demo or tester feedback has been recorded.
+
+### Verified member task status
+
+| Member | Status | Evidence and remaining distinction |
+|---|---|---|
+| Alain (`alain143`) | **Implementation complete; integrated** | Mobile implementation is present in the release integration (`4cdc9d9`). PR [#5](https://github.com/cxnisme/agrisoko-pocket-g11/pull/5) is still open and has not been reviewed or merged. |
+| Theogene (`rudasingwatheogene1`) | **Implementation integrated; PR merged** | PR [#6](https://github.com/cxnisme/agrisoko-pocket-g11/pull/6) was merged into `main`. Issue #3 remains open for checking the complete acceptance criteria and deployment readiness. |
+| Angelique (`IHIMBAZWEAngelique`) | **Pending** | The matcher is present, but no Angelique-authored implementation PR, evaluation evidence, or member confirmation is recorded. Do not attribute Theogene's merged PR to Angelique. |
+| Martin (`ladumartinbullen-cmyk`) | **Pending** | No member-authored implementation PR or device-test evidence is recorded. Offline behavior in the release integration is not attributed to Martin. |
+
+These implementation statuses do not claim member sign-off, profile approval,
+or physical-device validation. PR #5 remains unreviewed; do not describe it as
+formally approved or merged.
 
 ## Branch and pull request workflow
 
@@ -133,12 +144,12 @@ branches or merge your own PR without the team's agreed review.
 
 ### Current task status
 
-- [ ] AI/data owner has accepted Task 1 and confirmed the profile-data process.
-- [ ] API owner has accepted Task 2 and agreed with the AI response contract.
-- [ ] Mobile UI owner has accepted Task 3 and agreed with the API contract.
-- [ ] Offline/quality owner has accepted Task 4 and coordinated shared files.
+- [ ] Task 1 — Angelique: implementation/acceptance evidence pending.
+- [x] Task 2 — Theogene: API implementation integrated from merged PR #6; issue #3 remains open for acceptance checks.
+- [x] Task 3 — Alain: implementation integrated; PR #5 review/merge remains pending.
+- [ ] Task 4 — Martin: member implementation and device-test evidence pending.
 - [ ] Each member has reviewed and signed off on their own profile record.
-- [ ] Christian has reviewed the merged system before deployment or release.
+- [ ] Christian has completed deployment, APK build, and release verification.
 
 If a task owner does not participate, Christian will reassign the remaining work
 to participating members and update the issue/PR assignment before integration.
