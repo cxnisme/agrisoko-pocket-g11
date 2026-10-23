@@ -1,8 +1,8 @@
 # G11 contribution evidence
 
-This is a repository-evidence status record, not a signed contribution
-confirmation. Task assignment alone does not establish completion, and an
-integrator's implementation is not attributed to a member.
+We prepared this contribution record from the repository, pull requests, and
+available project evidence. Task assignments and integrated code are listed
+separately so each contribution is represented accurately.
 
 | GitHub username | Assigned area | Verified implementation evidence | Status |
 | --- | --- | --- | --- |
@@ -12,15 +12,17 @@ integrator's implementation is not attributed to a member.
 | rudasingwatheogene1 | FastAPI backend | PR [#6](https://github.com/cxnisme/agrisoko-pocket-g11/pull/6) merged by author; original sample-data/pickle implementation was removed and API was replaced during release integration | PR merged; review/issue acceptance and deployment pending |
 | ladumartinbullen-cmyk | Offline behavior and quality | No member-authored implementation PR or physical-device evidence recorded | Pending |
 
-Do not add personal names, registration numbers, signatures, metrics, or tester
-statements without confirmation and supporting evidence. The current offline
-code and matcher were integrated by the product owner and are not credited to
-members without evidence of their authorship. Member profile sign-off and
-physical-device testing remain pending.
+Our current member directory uses GitHub usernames and assigned task areas.
+Personal details, member statements, measured outcomes, and tester feedback
+appear only when supported by member confirmation or recorded evidence. The
+release-integrated matcher and offline code are credited to the project
+integration rather than to a member without authorship evidence. Profile
+confirmation and physical-device testing are not included in the current
+evidence.
 
 ## Pull request review record
 
-Both repository PRs were reviewed by inspecting their complete diffs on
-23 October 2026. GitHub reports no submitted reviews or check results for
-either PR. The detailed findings and distinction between PR code and the
-release integration are recorded in [`TEAM_TASKS.md`](../docs/TEAM_TASKS.md).
+We inspected the complete diffs for PRs #5 and #6 on 23 October 2026. GitHub
+shows no submitted reviews or check results for either PR. The detailed
+findings and the distinction between PR code and the release integration are
+recorded in [`TEAM_TASKS.md`](../docs/TEAM_TASKS.md).

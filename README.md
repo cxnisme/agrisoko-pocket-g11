@@ -82,7 +82,15 @@ lookup when the API is unreachable.
 
 ## Data and evidence status
 
-Member records use GitHub usernames and assigned responsibilities. They do not
-claim task completion, personal names, tester feedback, or measured outcomes
-without supporting evidence and member review. Local automated test results
-are documented separately from physical-device tests.
+We use GitHub usernames and assigned responsibilities in the member directory.
+The contribution record distinguishes integrated work, open pull requests, and
+tasks still in progress. Local automated test results are reported separately
+from physical-device testing and user feedback.
+
+## Team leadership and authorship
+
+AgriSoko Pocket G11 is our group project, led by Christian (`cxnisme`) as the
+group leader. Christian developed and integrated the project with support from
+an AI coding assistant during implementation, testing, review, and
+documentation. Project direction, integration decisions, and submission
+coordination were led by the group leader.

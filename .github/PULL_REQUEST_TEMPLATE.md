@@ -8,9 +8,9 @@ Link the issue: #
 
 ## Verification
 
-- [ ] I ran the relevant tests/checks and list the actual command and result below.
-- [ ] I did not invent metrics, member claims, feedback, or test outcomes.
-- [ ] I did not include secrets or machine-specific configuration.
+- [ ] I list the relevant checks I ran and their actual results below.
+- [ ] I used verified sources for metrics, member claims, feedback, and test outcomes.
+- [ ] I kept secrets and machine-specific configuration out of the change.
 - [ ] I coordinated changes to files shared with another task owner.
 
 Commands and results:

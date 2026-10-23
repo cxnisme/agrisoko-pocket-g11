@@ -1,18 +1,17 @@
 # GitHub issue drafts
 
-The task issues are now open. Task 3 already existed as
+The project tasks are tracked in GitHub. Task 3 is
 [issue #1](https://github.com/cxnisme/agrisoko-pocket-g11/issues/1), opened by
-Alain and now assigned to him. The AI task is [issue #2](https://github.com/cxnisme/agrisoko-pocket-g11/issues/2),
-assigned to Angelique; the API task is
+Alain and assigned to him. The AI task is
+[issue #2](https://github.com/cxnisme/agrisoko-pocket-g11/issues/2), assigned
+to Angelique; the API task is
 [issue #3](https://github.com/cxnisme/agrisoko-pocket-g11/issues/3), assigned
 to Theogene; and the offline/quality task is
-[issue #4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4), currently
-unassigned because Martin's collaborator invitation is still pending and he is
-not yet available in GitHub's assignee picker.
+[issue #4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4), assigned
+to Martin.
 
-The descriptions below are retained as task references. Do not open duplicate
-issues. Use [`TEAM_TASKS.md`](TEAM_TASKS.md) for role ownership, review, and
-integration responsibilities.
+The descriptions below summarize the task scopes. [`TEAM_TASKS.md`](TEAM_TASKS.md)
+records ownership, reviews, and integration status.
 
 ## Task 1 — Build the approved-profile AI matcher and evaluation
 
@@ -32,8 +31,8 @@ Acceptance:
   table from recorded queries.
 - Begin with threshold 0.45. Change it only when recorded queries and a
   documented threshold comparison justify the change.
-- Use only member-reviewed profile data; do not invent metrics, feedback,
-  biography, or repository evidence.
+- Profile data, metrics, feedback, biographies, and repository evidence are
+  grounded in member review and verifiable project sources.
 - Add focused test output and the evaluation artifact to the PR.
 
 **Review:** Theogene; Christian checks integration/evidence readiness.
@@ -54,8 +53,7 @@ Acceptance:
 - No private/unapproved profile fields in public responses and no unnecessary
   raw-question logging.
 - Local run/test instructions and deployment-ready configuration are
-  documented. Coordinate deployment with Christian; do not publish a service
-  independently.
+  documented. Deployment is coordinated with Christian.
 
 **Review:** Angelique and Martin.
 
@@ -63,10 +61,9 @@ Acceptance:
 
 **Issue:** [#1](https://github.com/cxnisme/agrisoko-pocket-g11/issues/1) · **Assignee:** `alain143`
 
-Issue #1 already covers the mobile screens, typed navigation, validation,
-error/retry states, accessibility, and evidence links. Compare its acceptance
-criteria with Task 3 in [`TEAM_TASKS.md`](TEAM_TASKS.md) and update that issue
-if coordination is needed; do not open another copy.
+Issue #1 covers the mobile screens, typed navigation, validation, error/retry
+states, accessibility, and evidence links. Its acceptance criteria correspond
+to Task 3 in [`TEAM_TASKS.md`](TEAM_TASKS.md).
 
 **Existing issue body:**
 
@@ -86,7 +83,7 @@ Acceptance:
 
 ## Task 4 — Implement and verify offline behavior
 
-**Issue:** [#4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4) · **Assignee:** unassigned; Martin was not available in the assignee picker.
+**Issue:** [#4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4) · **Assignee:** `ladumartinbullen-cmyk`
 
 **Body:**
 
@@ -99,8 +96,7 @@ Acceptance:
   connectivity transitions.
 - Live, cached, bundled, and local-match sources are distinguishable in the UI.
 - Last useful content survives a temporary API outage and an app restart.
-- Record actual physical-device outcomes in the test matrix; do not fill any
-  outcome before testing it.
-- Coordinate shared `mobile/` files with Alain before editing.
+- The test matrix records physical-device outcomes from completed checks.
+- Changes to shared `mobile/` files are coordinated with Alain.
 
-**Review:** Alain and Angelique; Christian owns final device/build integration.
+**Review:** Alain and Angelique; Christian coordinates final device/build integration as group leader.

@@ -4,55 +4,55 @@
 
 | Member | GitHub username | Primary task | Review responsibility |
 |---|---|---|---|
-| Christian | `cxnisme` | Product owner and final integrator; coordinates contracts, integrates accepted PRs, deploys the API, builds the APK, and owns the release | Cross-component contract, release readiness, and evidence traceability |
+| Christian | `cxnisme` | Group leader and final integrator; coordinates contracts, integrates accepted PRs, deploys the API, builds the APK, and coordinates the release | Cross-component contract, release readiness, and evidence traceability |
 | Angelique | `IHIMBAZWEAngelique` | AI/data: approved member-data schema, deterministic retrieval, confidence/no-match behavior, evaluation queries and metrics | API behavior and no-match safety |
 | Theogene | `rudasingwatheogiene1` | API: FastAPI endpoints, request/response validation, errors, and deployment-ready service configuration | Mobile API contract and error handling |
 | Alain | `alain143` | Mobile UI: Expo screens, navigation, accessible member directory/profile and online result presentation | Usability, accessibility, and visual evidence |
 | Martin | `ladumartinbullen-cmyk` | Offline/quality: cached directory and last result, local lookup, connectivity states, and offline/device test matrix | Offline recovery and evaluation evidence |
 
-Task owners and reviewers can be reassigned by Christian if a member is unable
-to participate. Reassign work explicitly in the related issue or pull request;
-do not attribute a contribution to someone who did not make it.
+Christian coordinates any task reassignment through the related issue or pull
+request. Our contribution record follows the available authorship evidence.
 
-Christian owns final integration, deployment, EAS APK build, release tag, and
-publication. Other members should deliver tested, reviewable components and
-deployment instructions; they should not publish a final APK or release without
-the integrator's approval.
+Christian leads final integration, deployment, EAS APK build, release tag, and
+publication. Our team coordinates component reviews and deployment handoff
+with the integrator.
 
 ## Task 1 — AI and evidence-grounded matching
 
 **Owner:** Angelique · **Area:** `ai-api/` · **Issue:** [#2](https://github.com/cxnisme/agrisoko-pocket-g11/issues/2) (assigned)
 
-Implement a deterministic Python profile finder using approved records only.
-Define and validate the profile schema, normalize searchable text, build
-word/character TF-IDF features, rank with cosine similarity, and return a clear
-no-match for unrelated, ambiguous, or below-threshold queries. Add the required
-index/fingerprint command, recorded evaluation queries, threshold rationale,
-and tests.
+Our Task 1 deliverable is a deterministic Python profile finder using
+member-approved records. It defines and validates the profile schema,
+normalizes searchable text, builds word/character TF-IDF features, ranks with
+cosine similarity, and returns a clear no-match for unrelated, ambiguous, or
+below-threshold queries. The task also covers the index/fingerprint command,
+recorded evaluation queries, threshold rationale, and tests.
 
-**Acceptance:** exact name, alias, role/feature, no-match, missing-question and
-empty-data cases are tested; report top-1 accuracy, no-match rejection, and
-confusions from the actual query set. Keep the required starting threshold of
-0.45 until recorded evidence justifies a change. Never synthesize member
-biographies, metrics, feedback, or links.
+**Acceptance:** tests cover exact name, alias, role/feature, no-match,
+missing-question, and empty-data cases. The evaluation reports top-1 accuracy,
+no-match rejection, and confusions from the recorded query set. The required
+starting threshold is 0.45; any change is supported by recorded evidence.
+Member biographies, metrics, feedback, and links are grounded in source
+evidence.
 
-**Review:** Theogene reviews the API-facing result contract; Christian reviews
-that evidence is grounded and the contract can be integrated.
+**Review:** Theogene reviews the API-facing result contract; Christian, as
+group leader, reviews that evidence is grounded and the contract can be
+integrated.
 
 ## Task 2 — API service and contract
 
 **Owner:** Theogene · **Area:** `ai-api/` · **Issue:** [#3](https://github.com/cxnisme/agrisoko-pocket-g11/issues/3) (assigned)
 
-Implement the FastAPI surface defined in the task brief: `GET /health`,
+Our Task 2 API surface follows the project brief: `GET /health`,
 `GET /members`, `GET /members/{id}`, `POST /ask`, and `GET /model-info`.
-Use typed request/response validation, explicit 404/422/503 behavior, useful
-service status, and tests. Document the local run command and a secure,
-HTTPS-ready deployment configuration; do not deploy or publish a service
-without Christian's coordination.
+It uses typed request/response validation, explicit 404/422/503 behavior,
+service status, and tests. The local run command and an HTTPS-ready deployment
+configuration are documented; service deployment is coordinated with the
+group leader.
 
-**Acceptance:** schema tests cover every endpoint, invalid input, unknown
-member, empty dataset, and unavailable/degraded service. The API must not expose
-unapproved fields or log raw questions unnecessarily.
+**Acceptance:** schema tests cover each endpoint, invalid input, unknown
+member, empty dataset, and unavailable/degraded service. Public responses
+contain approved fields, and request logging is limited to operational needs.
 
 **Review:** Angelique reviews matcher integration; Martin reviews failure and
 recovery behavior.
@@ -61,69 +61,69 @@ recovery behavior.
 
 **Owner:** Alain · **Area:** `mobile/` · **Issue:** [#1](https://github.com/cxnisme/agrisoko-pocket-g11/issues/1) (assigned)
 
-Build the Expo/TypeScript app screens and typed navigation for Home, Ask, Team,
-Member Profile, and About. Present online AI results with confidence, reason,
-approved introduction, and evidence links. Validate questions before sending
-them. Provide readable layouts, accessible labels, contrast, and large-text
-support.
+Our Task 3 mobile app includes Expo/TypeScript screens and typed navigation for
+Home, Ask, Team, Member Profile, and About. Online results present confidence,
+reason, approved introduction, and evidence links. Questions are validated
+before submission, with readable layouts, accessible labels, contrast, and
+large-text support.
 
 **Acceptance:** typecheck and UI tests pass; no-match, loading, error, and
-directory selection states are visible; links are opened safely. Do not hard
-code an API credential or machine-specific URL.
+directory selection states are visible; links open safely. API credentials and
+developer-specific URLs are kept out of source.
 
-**Review:** Martin reviews offline/source labels; Christian reviews the
-cross-platform API wiring before integration.
+**Review:** Martin reviews offline/source labels; Christian, as group leader,
+reviews the cross-platform API wiring before integration.
 
 ## Task 4 — Offline behavior and quality evidence
 
 **Owner:** Martin · **Area:** `mobile/`, `evidence/` · **Issue:** [#4](https://github.com/cxnisme/agrisoko-pocket-g11/issues/4) (assigned)
 
-Issue #4 is assigned to Martin. No implementation PR or device-test evidence
-has been recorded for this task yet.
+Issue #4 is assigned to Martin. At the time of this record, no implementation
+PR or device-test evidence was available for this task.
 
-Implement or verify connectivity-aware behavior, caching of the approved
+Our Task 4 scope covers connectivity-aware behavior, caching of the approved
 directory and last successful result, local exact-name/alias/role lookup,
 timeout/retry/server-unavailable states, and restoration after app restart.
-Prepare an honest device-test matrix for online/offline/recovery and accessibility
-checks; record only observations actually made.
+The device-test matrix captures online/offline/recovery and accessibility
+checks as observed.
 
 **Acceptance:** automated tests cover cache and local matching; the manual
-matrix records device/Android version and actual outcomes. An outage must not
-erase the last useful result or crash the app. Clearly label live, cached, and
-local results.
+matrix records device/Android version and outcomes. During an outage, the app
+preserves useful results and remains available. Live, cached, and local results
+are clearly labeled.
 
 **Review:** Alain reviews interaction states; Angelique reviews query/evaluation
-coverage. Coordinate overlapping `mobile/` files with Alain before editing.
+coverage. Changes to shared `mobile/` files are coordinated with Alain.
 
 ## Personal contribution and evidence
 
-Each member must own at least one technical change, run the relevant tests,
-explain a code decision, and contribute a review. Before a profile record is
-used in a public release, its owner must review and sign off on the exact claims.
-Collect tester feedback only with consent. Store issue, branch, PR, merged commit,
-and demo timestamp links after those artifacts exist.
+Our contribution process records each member's technical changes, relevant
+tests, design explanations, and reviews. Members review the claims in their
+profile records before public use. We collect tester feedback with consent and
+include issue, branch, PR, commit, and demo references when available.
 
 ## Current integration status
 
-Christian has integrated the mobile app, persistent offline cache, local lookup,
-FastAPI endpoints, and deterministic TF-IDF/cosine matching in the working
-release tree. Local automated checks are recorded in `evidence/TEST_LOG.pdf`.
-This integration does not replace member review of PR #5 or profile sign-off.
-The API is not yet deployed, issue #4 remains open and assigned to Martin, and
-no physical-device demo or tester feedback has been recorded.
+As group leader and final integrator, Christian integrated the mobile app,
+persistent offline cache, local lookup, FastAPI endpoints, and deterministic
+TF-IDF/cosine matching in the working release tree. Local automated checks are
+recorded in `evidence/TEST_LOG.pdf`. PR #5 and member profile sign-off are
+tracked separately. The API is not yet deployed, issue #4 remains open and
+assigned to Martin, and physical-device demo and tester feedback are not
+included in the current evidence.
 
 ### Verified member task status
 
 | Member | Status | Evidence and remaining distinction |
 |---|---|---|
-| Alain (`alain143`) | **Implementation integrated; PR review requests changes** | Mobile screens/navigation were incorporated in release integration `4cdc9d9`. PR [#5](https://github.com/cxnisme/agrisoko-pocket-g11/pull/5) remains open and unmerged; the submitted branch has blocking placeholder/mock-data and stale-result issues listed in the review record below. |
+| Alain (`alain143`) | **Implementation integrated; review findings documented** | Mobile screens/navigation were incorporated in release integration `4cdc9d9`. PR [#5](https://github.com/cxnisme/agrisoko-pocket-g11/pull/5) remains open and unmerged; our review record identifies placeholder/mock-data and stale-result issues in its submitted branch. |
 | Theogene (`rudasingwatheogene1`) | **PR merged by author; release implementation superseded** | PR [#6](https://github.com/cxnisme/agrisoko-pocket-g11/pull/6) was merged without submitted reviews or check runs. Its sample profile data and pickle-based model path were removed; the current API was reimplemented during release integration. The API work is recorded, but PR review and issue #3 acceptance are not equivalent to formal approval or deployment. |
-| Angelique (`IHIMBAZWEAngelique`) | **Pending** | The matcher is present, but no Angelique-authored implementation PR, evaluation evidence, or member confirmation is recorded. Do not attribute Theogene's merged PR to Angelique. |
-| Martin (`ladumartinbullen-cmyk`) | **Pending** | No member-authored implementation PR or device-test evidence is recorded. Offline behavior in the release integration is not attributed to Martin. |
+| Angelique (`IHIMBAZWEAngelique`) | **Pending** | The matcher is present in the release integration, but no Angelique-authored implementation PR, evaluation evidence, or member confirmation is recorded. Theogene's merged API PR is recorded separately from Angelique's matcher task. |
+| Martin (`ladumartinbullen-cmyk`) | **Pending** | No member-authored implementation PR or device-test evidence is recorded. The offline behavior in the release integration is recorded as integrator work. |
 
-These implementation statuses do not claim member sign-off, profile approval,
-or physical-device validation. The reviews below are code-review findings,
-not GitHub-submitted approvals.
+These implementation statuses distinguish repository evidence from member
+sign-off, profile approval, and physical-device validation. The review notes
+below are code-review findings; they are not reviews submitted through GitHub.
 
 ### Pull request review record
 
@@ -132,12 +132,12 @@ has a submitted GitHub review or reported CI/check results.
 
 | PR | Review outcome | Findings and current-main disposition |
 |---|---|---|
-| [#5 — Alain, mobile UI](https://github.com/cxnisme/agrisoko-pocket-g11/pull/5) | **Request changes; do not merge the submitted branch as-is.** | The PR defaults to mock mode and returns placeholder profiles, includes `GXX`/placeholder repository configuration, and keeps a module-global previous result that can be shown after a different query fails. The release integration replaced the mock data and corrected the group/repository values; the result cache is now query-scoped. PR #5 remains open and unmerged, so the fixes in `main` must not be represented as a PR approval. |
+| [#5 — Alain, mobile UI](https://github.com/cxnisme/agrisoko-pocket-g11/pull/5) | **Review finding: changes are needed before merging the submitted branch.** | The PR defaults to mock mode and returns placeholder profiles, includes `GXX`/placeholder repository configuration, and keeps a module-global previous result that can be shown after a different query fails. The release integration replaced the mock data and corrected the group/repository values; the result cache is now query-scoped. PR #5 remains open and unmerged; the fixes in `main` are separate from a formal PR approval. |
 | [#6 — Theogene, API](https://github.com/cxnisme/agrisoko-pocket-g11/pull/6) | **Merged by author; post-merge review found release blockers in the submitted diff.** | The diff included unverified sample profile claims and auto-generated sample data, loaded a pickle model at API startup, omitted the required `/members` endpoints, and added a CORS test without corresponding CORS middleware in that diff. The pickle and sample-data implementation were removed and the API was replaced in release integration. PR #6 remains merged in GitHub history, but this is not a reviewer approval of its original implementation. |
 
 The final integration has separate local validation records; those results do
-not retroactively validate the untested PR heads. No PR was closed or merged
-as part of this review.
+not retroactively validate the PR heads. This review did not change either PR's
+GitHub status.
 
 ## Branch and pull request workflow
 
@@ -152,15 +152,15 @@ git commit -m "feat: <describe the task>"
 git push -u origin feature/<short-task-name>
 ```
 
-Open a pull request with base `main`, describe the task, list checks actually
-run, link the issue, and request the listed reviewer. Do not force-push shared
-branches or merge your own PR without the team's agreed review.
+Our pull requests use `main` as the base, describe the task, list checks that
+were run, link the issue, and request the listed reviewer. We coordinate shared
+branches and merges through the team's review process.
 
 ### Current task status
 
 - [ ] Task 1 — Angelique: implementation/acceptance evidence pending.
 - [x] Task 2 — Theogene: API contribution merged; release API was reimplemented. Issue #3 acceptance and deployment checks remain open.
-- [x] Task 3 — Alain: mobile implementation integrated; PR #5 is open with changes requested and must not be reported as merged.
+- [x] Task 3 — Alain: mobile implementation integrated; PR #5 remains open and unmerged.
 - [ ] Task 4 — Martin: member implementation and device-test evidence pending.
 - [ ] Each member has reviewed and signed off on their own profile record.
 - [ ] Christian has completed deployment, APK build, and release verification.

@@ -1,17 +1,17 @@
-# Evidence status
+# Project evidence
 
-Evidence files must describe work that has actually been completed and
-verified. At this point, automated local checks can be recorded from their
-actual run output; physical-device tests, external user feedback, and a demo
-recording must remain pending until performed.
+This folder contains the evidence available for the current project build.
+Automated checks below reflect recorded local results. Physical-device
+validation, external user feedback, and a demo recording are listed separately
+so the submission status is clear.
 
 | Deliverable | Status |
 | --- | --- |
-| `AI_USE.md` | Available; describes development assistance and runtime behavior |
-| `CONTRIBUTIONS.pdf` | Available; records repository-verified task status; member profile sign-off remains pending |
-| `TEST_LOG.pdf` | Available; contains automated local test results; physical-device checks remain pending |
-| `FEEDBACK.pdf` | Not generated; collect consented feedback before documenting |
-| `COMBO_A3_G11_DEMO.mp4` | Not recorded; capture the app on a real device |
+| `AI_USE.md` | Available; describes project authorship, development assistance, and runtime behavior |
+| `CONTRIBUTIONS.pdf` | Available; records repository evidence and pull-request review findings |
+| `TEST_LOG.pdf` | Available; records automated local checks; no physical-device test is included |
+| `FEEDBACK.pdf` | Available; states that no external user feedback was collected |
+| `COMBO_A3_G11_DEMO.mp4` | Not available in this package |
 
-Do not create signatures, test results, user feedback, or a demo artifact that
-does not exist.
+Our evidence record reports completed checks and available artifacts. It does
+not include unperformed tests, uncollected feedback, or an unrecorded demo.

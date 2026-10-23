@@ -1,21 +1,24 @@
-# AI use disclosure
+# AI assistance and project authorship
 
-## Tools and purpose
+## Project authorship and assistance
 
-An AI coding assistant was used during development to help integrate the Expo
-mobile interface, scaffold and refine the FastAPI service, write focused
-automated tests, and prepare project documentation.
+AgriSoko Pocket G11 is our group project, led by Christian (`cxnisme`) as the
+group leader. Christian developed and integrated the project with support from
+an AI coding assistant for implementation, focused automated tests, code
+review, and documentation. The group leader directed the work and coordinated
+integration and submission.
 
 ## Runtime behavior
 
-The application does not call a generative AI model. API matching is
+The application does not call a generative AI model at runtime. Its API uses
 deterministic TF-IDF/cosine retrieval with exact name/alias boosts and a
-confidence threshold. The offline fallback uses local token matching. The API
-returns its match reason and linked repository evidence.
+confidence threshold. The offline fallback uses local token matching. API
+responses include a match reason and repository evidence links.
 
-## Human review and limitations
+## Validation and limitations
 
-AI-generated changes were reviewed and validated with the recorded local
-checks. A passing automated test suite does not establish physical-device
-compatibility, member approval of profile data, or tester feedback. Those
-checks remain separate release evidence.
+We reviewed AI-assisted changes and ran the local checks listed in
+`TEST_LOG.pdf`. Those automated checks cover software behavior in the tested
+environment; they are not physical-device results, member profile approvals, or
+external user feedback. The contribution and evidence records report those
+items separately.
