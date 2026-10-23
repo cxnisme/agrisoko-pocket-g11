@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Node / Expo
+node_modules/
+.expo/
+dist/
+web-build/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Build artifacts and signing keys
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# Editors / OS
+.DS_Store
+.vscode/
+*.tsbuildinfo
